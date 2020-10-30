@@ -10,11 +10,11 @@ public class Main {
     public static void main(String[] args) {
         IntStream.range(0, 9).forEach(i -> board[i] = blank);
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 0; i <= 9; i++) {
             char player = i % 2 == 0 ? 'X' : 'O';
             printBoard();
 
-            if (i != 10) {
+            if (i != 9) {
                 move(player);
             } else {
                 printDrawMessage();
